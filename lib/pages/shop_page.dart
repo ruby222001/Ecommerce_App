@@ -12,9 +12,7 @@ class ShopPage extends StatelessWidget {
         foregroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: const Center(child: Text('Shop Page')),
       ),
-      drawer: const MyDrawer(
-
-      ),
+      drawer: const MyDrawer(),
             backgroundColor: Theme.of(context).colorScheme.background,
 
     );
