@@ -63,8 +63,11 @@ on FirebaseAuthException catch(e){
         ),
         const SizedBox(height: 25),
               //title
-        const Text('S H O P E E',
-        style: TextStyle(fontSize: 20),
+                      const Text('Watch Box',
+        style: TextStyle(fontSize: 20,
+                           fontWeight: FontWeight.bold
+
+        ),
         ),
         const SizedBox(height: 15),
         

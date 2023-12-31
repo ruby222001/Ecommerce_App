@@ -60,6 +60,11 @@ void payButtonpressed(BuildContext context){
             final item = cart[index];
 
             return ListTile(
+              leading: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(20)
+                ),
+                child: Image.asset(item.imagepath,)),
 title: Text(item.name),
 subtitle: Text(item.price.toStringAsFixed(2)),
 trailing: IconButton(icon: const Icon(Icons.remove),
@@ -71,7 +76,8 @@ onPressed: () => removeItemfromCart(context,item),
 
           Padding(
             padding: const EdgeInsets.all(50),
-            child: MyButton(onTap: ()=>payButtonpressed(context), child: const Text('Pay Now')),
+            child: MyButton(onTap: ()=>payButtonpressed(context), child: const Text('Pay Now',
+            style: TextStyle(fontWeight: FontWeight.bold),)),
           ),
         ],
       ),

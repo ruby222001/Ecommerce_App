@@ -48,12 +48,15 @@ void addToCart(BuildContext context){
         aspectRatio: 1,
         child: Container(
           decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(12),
             color: Theme.of(context).colorScheme.secondary,
           ),
           width: double.infinity,padding: const EdgeInsets.all(25),
-          child: const Icon(Icons.favorite),
-        ),
-      ),
+child: Image(image: AssetImage(product.imagepath)),
+),
+),
+        
+      
       const SizedBox(height: 25,),
           //product name
           Column(
@@ -74,7 +77,8 @@ void addToCart(BuildContext context){
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text('Rs.' +product.price.toStringAsFixed(2)),
+              Text('\$' +product.price.toStringAsFixed(2),
+              style: TextStyle(fontWeight: FontWeight.bold)),
                     Container(
                       decoration: BoxDecoration(
               color:Theme.of(context).colorScheme.secondary,
@@ -86,7 +90,8 @@ void addToCart(BuildContext context){
             ],
           ),
         ],
-      ),
-    );
+      )
+    ) ;   
+    
   }
 }

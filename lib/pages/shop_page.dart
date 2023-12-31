@@ -16,21 +16,25 @@ class ShopPage extends StatelessWidget {
         backgroundColor: Colors.transparent,
         elevation: 0,
         foregroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: const Center(child: Text('Shop Page')),
+        title: const Center(child: Text('Watch Box')),
         actions: [
           IconButton(onPressed: ()=> Navigator.pushNamed(context, '/cart_page'), icon: const Icon(Icons.shopping_cart_outlined))
         ],
       ),
       drawer: const MyDrawer(),
             backgroundColor: Theme.of(context).colorScheme.background,
+
 body: ListView(
   children: [
     Center(
+      
       child: Text('Pick from a selected list of products',style: TextStyle(
         color: Theme.of(context).colorScheme.inversePrimary,
       ),
       ),
     ),
+          const SizedBox(height: 20),
+
     SizedBox(
       height: 550,
       child: ListView.builder(

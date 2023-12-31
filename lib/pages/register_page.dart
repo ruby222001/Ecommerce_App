@@ -75,9 +75,12 @@ try{
               ),
               const SizedBox(height: 10),
               //title
-                      const Text('S H O P E E',
+                      const Text('Watch Box',
 
-                style: TextStyle(fontSize: 20),
+                style: TextStyle(fontSize: 20,
+                            fontWeight: FontWeight.bold),
+
+                
               ),
               const SizedBox(height: 15),
               //username

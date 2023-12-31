@@ -16,7 +16,7 @@ class MyDrawer extends StatelessWidget {
             DrawerHeader(
               child: Center(
                 child: Icon(
-                  Icons.shopping_bag,
+                  Icons.watch,
                   size: 70,
                   color: Theme.of(context).colorScheme.inversePrimary,
                 ),
@@ -33,7 +33,7 @@ class MyDrawer extends StatelessWidget {
             ),
             //cart tile
             MyListTile(
-              text: 'cart',
+              text: 'Cart',
               icon: Icons.shopping_cart,
               onTap: () {
                 //pop drawer first

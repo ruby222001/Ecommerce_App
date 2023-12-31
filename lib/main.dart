@@ -1,6 +1,3 @@
-
-
-import 'package:app/auth/auth.dart';
 import 'package:app/firebase_options.dart';
 import 'package:app/models/shop.dart';
 import 'package:app/pages/intro_page.dart';
@@ -35,8 +32,7 @@ class MyApp extends StatelessWidget {
       home:const IntroPage(),
       theme: lightMode,
       routes: {
-        '/login_page': (context) => const LoginPage(),
-        '/register_page': (context) => const RegisterPage(),
+       
         '/intro_page': (context) => const IntroPage(),
         '/shop_page': (context) => const ShopPage(),
         '/cart_page': (context) => const CartPage(),
