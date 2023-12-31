@@ -3,6 +3,8 @@
         android:label="app"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+        tools:overrideLibrary="io.flutter.plugins.firebase.auth">
+
         <activity
             android:name=".MainActivity"
             android:exported="true"

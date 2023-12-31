@@ -63,23 +63,23 @@ try{
       backgroundColor: Theme.of(context).colorScheme.background,
       body: Center(
         child: Padding(
-          padding: const EdgeInsets.all(25.0),
+          padding: const EdgeInsets.all(15.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               //logo
               Icon(
                 Icons.person,
-                size: 80,
+                size: 50,
                 color: Theme.of(context).colorScheme.inversePrimary,
               ),
-              const SizedBox(height: 25),
+              const SizedBox(height: 10),
               //title
-              const Text(
-                'M I N I M A l',
+                      const Text('S H O P E E',
+
                 style: TextStyle(fontSize: 20),
               ),
-              const SizedBox(height: 25),
+              const SizedBox(height: 15),
               //username
               MyTextField(
                 hintText: 'Username',
@@ -129,13 +129,13 @@ try{
                 ],
               ),
               const SizedBox(
-                height: 25,
+                height: 15,
               ),
               MyButton(
                 onTap: registeruser,
                 child: const Text("Register"),
               ),
-              const SizedBox(height: 20),
+              const SizedBox(height: 10),
               //don't have an account? Register here
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,

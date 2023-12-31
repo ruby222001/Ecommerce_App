@@ -1,5 +1,6 @@
 import 'package:app/components/my_button.dart';
 import 'package:app/components/my_textfield.dart';
+import 'package:app/helper/helper_functions.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 class LoginPage extends StatefulWidget {
@@ -34,10 +35,12 @@ try{
     password: passwordController.text,
     );
     //pop loading circle
-    Navigator.pop(context);
-}on FirebaseAuthException catch(e){
+   if (context.mounted) Navigator.pop(context);
+}
+on FirebaseAuthException catch(e){
   //pop loading circle
   Navigator.pop(context);
+  displayMessageToUser(e.code, context);
  
 
 }
@@ -60,10 +63,10 @@ try{
         ),
         const SizedBox(height: 25),
               //title
-        const Text('M I N I M A L',
+        const Text('S H O P E E',
         style: TextStyle(fontSize: 20),
         ),
-        const SizedBox(height: 25),
+        const SizedBox(height: 15),
         
         //email textfield
         MyTextField(
@@ -91,7 +94,7 @@ try{
               ),),
             ],
           ),
-                  const SizedBox(height: 25,),
+                  const SizedBox(height: 15,),
 MyButton(
   onTap: loginUser,
  child: const Text("Login"),
