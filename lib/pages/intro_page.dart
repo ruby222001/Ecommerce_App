@@ -20,7 +20,7 @@ class IntroPage extends StatelessWidget {
       const SizedBox(height: 25),
       //title
       const Text(
-        'Watch Box',
+        'WatchWorks',
         style: TextStyle(
           fontWeight: FontWeight.bold,
           fontSize: 20,

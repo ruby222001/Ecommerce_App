@@ -11,7 +11,7 @@ void removeItemfromCart(BuildContext context, Product product){
   showDialog(
     context: context,
     builder: (context)=> AlertDialog(
-    content: const Text("Remove this item to your cart?"),actions: [
+    content: const Text("Remove this item from your cart?"),actions: [
 
       //cancel button
       MaterialButton(onPressed: () => Navigator.pop(context),

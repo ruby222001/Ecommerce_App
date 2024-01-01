@@ -73,12 +73,14 @@ child: Image(image: AssetImage(product.imagepath)),
               ),
             ],
           ),
+                        const SizedBox(height: 20),
+
           //product price+add to cart button
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text('\$' +product.price.toStringAsFixed(2),
-              style: TextStyle(fontWeight: FontWeight.bold)),
+              style: const TextStyle(fontWeight: FontWeight.bold)),
                     Container(
                       decoration: BoxDecoration(
               color:Theme.of(context).colorScheme.secondary,

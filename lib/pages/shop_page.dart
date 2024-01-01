@@ -16,7 +16,8 @@ class ShopPage extends StatelessWidget {
         backgroundColor: Colors.transparent,
         elevation: 0,
         foregroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: const Center(child: Text('Watch Box')),
+        title: const Center(child: Text('WatchWorks',
+        style: TextStyle(fontWeight: FontWeight.bold),)),
         actions: [
           IconButton(onPressed: ()=> Navigator.pushNamed(context, '/cart_page'), icon: const Icon(Icons.shopping_cart_outlined))
         ],
@@ -36,7 +37,7 @@ body: ListView(
           const SizedBox(height: 20),
 
     SizedBox(
-      height: 550,
+      height: 600,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
         itemCount: products.length,
@@ -48,8 +49,10 @@ body: ListView(
         return MyProductTile(product: product);
       }),
     ),
+
   ],
 ),
+
     );
   }
 }
