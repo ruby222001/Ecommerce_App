@@ -11,7 +11,7 @@ user can scroll horizontal
 
 add to cart and remove from cart
 
-![image](https://github.com/ruby222001/Ecommerce_App/assets/113155583/89d737e3-43d0-4444-ad1f-f14d6eb9d54f)
+![image](https://github.com/ruby222001/Ecommerce_App/assets/113155583/3b9aad2b-1dd1-4e7c-8fcc-eb60f5ef0b2d)
 
 
 
