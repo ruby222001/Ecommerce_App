@@ -1,6 +1,6 @@
 Simple Watch shop with add to cart and remove from cart features
 
-user can scroll horinzontal
+user can scroll horizontal
 
 
 
